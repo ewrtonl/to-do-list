@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>CodePen - To do list</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!DOCTYOPE html>
+    <html lan="en">
+      <head>
+        <meta charset="UFT-8" />
+        <meta name="viewport" content="width=device=width, initial-scale=1.0" />
+        <meta http-equip="X-UA-Compatible" content="ie=edge" />
+        <title>To do list</title>
+      </head>
+
+      <body>
+        <div class="board">
+          <h3>a fazer</h3>
+
+          <ul id="todo" ondrop="drop(event, this.id)" ondragover="over(event)">
+            <li id="1" draggable="true" ondragstart="drag(event)">
+              <p>dormir</p>
+              <p class="remove" onclick="removeCard(this)">X</p>
+            </li>
+            <li id="2" draggable="true" ondragstart="drag(event)">
+              <p>estudar biologia</p>
+              <p class="remove" onclick="removeCard(this)">X</p>
+            </li>
+          </ul>
+
+          <div class="add-card" onclick="addCard(this)">
+            <p>adicionar</p>
+          </div>
+        </div>
+
+        <div class="board">
+          <h3>fazendo</h3>
+
+          <ul
+            id="doing"
+            ondrop="drop(event, this.id)"
+            ondragover="over(event)"
+          ></ul>
+
+          <div class="add-card" onclick="addCard(this)">
+            <p>adicionar</p>
+          </div>
+        </div>
+
+        <div class="board">
+          <h3>finalizado</h3>
+
+          <ul
+            id="done"
+            ondrop="drop(event, this.id)"
+            ondragover="over(event)"
+          ></ul>
+
+          <div class="add-card" onclick="addCard(this)">
+            <p>adicionar</p>
+          </div>
+        </div>
+      </body>
+    </html>
+    <script src="./script.js"></script>
+  </body>
+</html>
